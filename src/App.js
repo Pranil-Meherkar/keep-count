@@ -2,8 +2,8 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [fcount, setFcount] = useState(localStorage.getItem("fcount") || 0);
-  const [ecount, setEcount] = useState(localStorage.getItem("ecount") || 0);
+  const [fcount, setFcount] = useState(+localStorage.getItem("fcount") || 0);
+  const [ecount, setEcount] = useState(+localStorage.getItem("ecount") || 0);
 
   const temp = { "Fresher Interviews": fcount, "Experienced Interviews": ecount }
 
